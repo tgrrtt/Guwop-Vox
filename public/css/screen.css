@@ -1,0 +1,9 @@
+div.spacer {
+    background-color: #8FC73E;
+    height: 1em;
+}
+
+div#navbar {
+    background-color: #8FC73E;
+    padding: 10px 0;
+}
