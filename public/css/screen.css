@@ -23,3 +23,15 @@ h1 {
     border-radius: 5px;
 
 }
+
+.all-face-container {
+    margin-top: 40px;
+    padding: 0;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+h3 {
+
+    text-align: center;
+}
