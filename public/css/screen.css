@@ -15,23 +15,31 @@ h1 {
     width: 100%;
     margin-top: 0;
     background-color: black;
-
-}
-
-.vox-container {
-    background-color: antiquewhite;
-    border-radius: 5px;
+    font-family: 'Hammersmith One', sans-serif;
 
 }
 
 .all-face-container {
-    margin-top: 40px;
+    margin: 40px auto;
     padding: 0;
     background-color: antiquewhite;
     border-radius: 10px;
+    width: 700px;
 }
 
 h3 {
 
     text-align: center;
+    font-family: "Helvetica", sans-serif;
+}
+
+.face-container {
+    display: inline-block;
+    width: 170px;
+    margin: 10px 0;
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
 }
