@@ -1,7 +1,24 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
 
+.cf:after {
+    clear: both;
+}
 
 body {
-    background-color: greenyellow;
+    background: url('../img/dark_wall.png') black;
 }
 
 h1 {
@@ -14,7 +31,17 @@ h1 {
 .header {
     width: 100%;
     margin-top: 0;
-    background-color: black;
+
+    background: rgb(74,85,61); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(74,85,61,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(74,85,61,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(74,85,61,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(74,85,61,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(74,85,61,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(74,85,61,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a553d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
     font-family: 'Hammersmith One', sans-serif;
 
 }
@@ -25,6 +52,7 @@ h1 {
     background-color: antiquewhite;
     border-radius: 10px;
     width: 700px;
+    box-shadow: 2px 2px 10px 5px #000;
 }
 
 h3 {
@@ -42,4 +70,15 @@ h3 {
 img {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.frame {
+    -moz-border-image: url('../img/frame.png') 93 92 87 92 stretch stretch;
+    -webkit-border-image: url('../img/frame.png') 93 92 87 92 stretch stretch;
+    -o-border-image: url('../img/frame.png') 93 92 87 92 stretch stretch;
+    border-image: url('../img/frame.png') 93 92 87 92 stretch stretch;
+    border-color: #f4be52;
+    /*border-style: inset;*/
+    border-width: 60px;
+    background-color: #ffe;
 }
