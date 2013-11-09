@@ -48,7 +48,7 @@ body {
 h3 {
 
     text-align: center;
-    font-family: "Helvetica", sans-serif;
+    font-family: 'Ledger', cursive;
 }
 
 .face-container {
@@ -70,14 +70,17 @@ img.face {
     border-color: #f4be52;
     /*border-style: inset;*/
     border-width: 60px;
-    background-color: #ffe;
+    background-image: url('../img/subtle_white_feathers.png');
+    background-color: #dfffef;
 }
 
 .text-container {
 
     height: 10px;
     display: table-cell;
+
 }
+
 
 #plaque img {
     display: block;
