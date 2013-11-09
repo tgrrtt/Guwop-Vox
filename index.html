@@ -4,7 +4,8 @@
     <title>Guwop Vox: A Gucci Mane Digital Soundboard </title>
     <link rel="stylesheet" href="css/html-body-reset.css"/>
     <link href='http://fonts.googleapis.com/css?family=Rum+Raisin|Hammersmith+One|Ledger' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/screen.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
 </head>
 <body>
     <div class="header">
@@ -12,8 +13,11 @@
     </div>
     <div class="all-face-container frame">
         <div class="face-container">
-            <img src="img/gucci-mane-smile.png" class="face">
+            <img src="img/gucci-mane-smile.png" class="face" id="chain">
             <div class="text-container"><h3>Gucci Mane Is Self Conscious</h3></div>
+            <audio  id="chain-audio">
+                <source src="audio/chain.mp3" type="audio/mp3">
+            </audio>
         </div>
         <div class="face-container">
             <img src="img/gucci-mane-smile.png" class="face">
@@ -45,6 +49,7 @@
         </div>
     </div>
     <div id="plaque"><img src="img/plaque-hued.png"></div>
-
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/gucci.js"></script>
 </body>
 </html>
