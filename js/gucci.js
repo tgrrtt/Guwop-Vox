@@ -11,4 +11,3 @@ $(document).ready(function () {
         $("#building-audio")[0].play();
     })
 });
-sdfsdfs
