@@ -37,7 +37,7 @@ body {
     display: inline-block;
     width: 170px;
     margin: 10px 0;
-
+    cursor: pointer;
 }
 
 
@@ -45,26 +45,25 @@ body {
 img.face {
     padding-left: 10px;
     padding-right: 10px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-}
-
-.face:hover {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
 
 }
+
+
 
 h3 {
 
     text-align: center;
     font-family: 'Ledger', cursive;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.face-container:hover h3 {
+    color: gold;
+    text-shadow: 0 1px 7px #000;
 }
 
 .text-container {
