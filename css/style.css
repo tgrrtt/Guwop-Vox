@@ -48,17 +48,19 @@ img.face {
 h3 {
 
     text-align: center;
-    font-family: 'Ledger', cursive;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
+    font-family: 'Ledger', serif;
+    -webkit-transition: .2s, .6s;
+    -moz-transition: .2s, .6s;
+    -ms-transition: .2s, .6s;
+    -o-transition: .2s, .6s;
+    transition: .2s, .6s;
 }
 
 .face-container:hover h3 {
-    color: gold;
-    text-shadow: 0 1px 7px #000;
+    color: #ffcf00;
+    text-shadow: 0 1px 6px #000;
+    -webkit-transition-property: color, text-shadow;
+
 }
 
 .text-container {

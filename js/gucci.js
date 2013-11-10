@@ -8,6 +8,7 @@ $(document).ready(function () {
     };
 
     $(".face-container").on("click", function (e) {
+        console.log("connecting");
         $play(e);
     });
 

@@ -1,0 +1,29 @@
+{
+    "rapper_name": "Gucci Mane",
+    "soundboard_name": "Guwop Vox",
+    "phrases": [{
+        "audioName": "chain",
+        "phraseText": "Gucci Mane Is Self Conscious"
+    },{
+        "audioName": "privacy",
+        "phraseText": "Gucci Mane Enjoys His Privacy"
+    },{
+        "audioName": "building",
+        "phraseText": "Gucci Mane's Grand Entrance"
+    },{
+        "audioName": "burr",
+        "phraseText": "Gucci Mane Might Have Hypothermia"
+    },{
+        "audioName": "wow",
+        "phraseText": "Gucci Mane Is Amazed"
+    },{
+        "audioName": "time",
+        "phraseText": "Gucci Mane Has The Time"
+    },{
+        "audioName": "airplane",
+        "phraseText": "Gucci Mane Is An Airplane"
+    },{
+        "audioName": "uhh",
+        "phraseText": "Gucci Mane Is Rick Ross"
+    }]
+}
