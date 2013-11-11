@@ -21,6 +21,9 @@ var GucciView = Backbone.View.extend({
 });
 
 var GucciCollectionView = Backbone.View.extend({
+    events: {
+        "click .face-container": "playAudio"
+    },
     render: function () {
         this.collection.forEach(this.renderPhrase, this);
         this.$el.addClass("all-face-container frame");
@@ -29,6 +32,12 @@ var GucciCollectionView = Backbone.View.extend({
     renderPhrase: function (gucciPhrase) {
         var gucciView = new GucciView({model: gucciPhrase});
         this.$el.append(gucciView.render().el);
+    },
+    playAudio: function (evt) {
+        var $thisAudio = $(evt.target)
+            .closest("div .face-container")
+            .find("audio");
+        $thisAudio[0].play();
     }
 });
 
@@ -38,21 +47,12 @@ $(document).ready(function () {
 
     gucciCollection = new GucciCollection();
     gucciCollection.url = "data/guwop-data.json";
-    gucciCollection.fetch({success: function (model, response, options) {
-        gucciCollectionView = new GucciCollectionView({collection: gucciCollection});
-        $("body").prepend(gucciCollectionView.render().el);
-        //this is super hackey
-        $play = function (evt) {
-            var $thisAudio = $(evt.target)
-                .closest("div .face-container")
-                .find("audio");
-            $thisAudio[0].play();
-        };
+    gucciCollection.fetch({
+        success: function (model, response, options) {
+            gucciCollectionView = new GucciCollectionView({collection: gucciCollection});
+            $("body").prepend(gucciCollectionView.render().el);
 
-        $(".face-container").on("click", function (e) {
-            console.log("connecting");
-            $play(e);
-        });
-    }});
+        }
+    });
 
 });

@@ -21,13 +21,13 @@ body {
     border-color: #f4be52;
     /*border-style: inset;*/
     border-width: 60px;
-    background: url('../img/subtle_white_feathers.png') #dfffef;
+
 }
 
 .all-face-container {
     margin: 40px auto;
     padding: 0;
-    background-color: antiquewhite;
+    background: url('../img/subtle_white_feathers.png') #fffdfd;
     width: 700px;
     box-shadow:0 7px 13px 5px #000;
 }
