@@ -8,16 +8,22 @@
 </head>
 <body>
     <div id="plaque"><img src="img/plaque.png"></div>
+    <div id="footer">
+        <p>Summoned from beyond the abyss by Tyler G</p>
+        <a href="https://gmail.com">E-Mail</a>
+        <a href="https://github.com/AuroraAtra">GitHub</a>
+        <a href="https://twitter.com">Twitter</a>
+    </div>
     <script type="text/template" id="face-container-template">
             <img src="img/gucci-mane-smile.png" class="face">
             <div class="text-container"><h3><%= phraseText%></h3></div>
             <audio  id="<%= audioName %>-audio">
-                <source src="audio/<%= audioName %>.mp3" type="audio/mp3">
+                <source src="audio/<%= audioName %>.mp3" type="audio/mp3" preload="auto">
             </audio>
     </script>
-    <script src="js/jquery-2.0.3.min.js"></script>
-    <script src="js/underscore-min.js"></script>
-    <script src="js/backbone-min.js"></script>
+    <script src="js/vendor/jquery-2.0.3.min.js"></script>
+    <script src="js/vendor/underscore-min.js"></script>
+    <script src="js/vendor/backbone-min.js"></script>
     <script src="js/gucci-backbone.js"></script>
 </body>
 </html>
