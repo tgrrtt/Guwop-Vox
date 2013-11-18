@@ -1,6 +1,6 @@
 
 body {
-    background: url('../img/test-background.png') black;
+    background: url('../img/dark_wall.png') black;
 }
 
 
@@ -105,6 +105,18 @@ h3 {
 
 }
 
-h6 {
+@media screen and (max-width: 600px) {
+    .all-face-container {
+        margin: 40px auto;
+        padding: 0;
+        background: url('../img/subtle_white_feathers.png') #fffdfd;
+        width: 340px;
+        box-shadow:0 7px 13px 5px #000;
+    }
+
+    #plaque {
+        width: 340px;
+        margin: 15px auto 50px auto;
+    }
 
 }
